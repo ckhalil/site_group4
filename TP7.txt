@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>TP Formulaires</h2>
+
+<form action="/action_page.php">
+  <label for=Pré:>Prénom:</label><br>
+  <input type="text" id="Pré" name="Pré"><br>
+  <label for=Nom:>Nom:</label><br>
+  <input type="text" id="Nom" name="Nom">
+</form> 
+
+<form action="/action_page.php">
+ <label for="genre">Genre:</label><br>
+  <input type="radio" id="Masculin" name="genre" value="Masculin">	
+	<label for="Masculin"> Masculin</label><br>
+   <input type="radio" id="Féminin" name="genre" value="Féminin">	
+	<label for="Féminin"> Féminin</label><br>
+</form>
+<form>
+ <label for="snum">Vous êtes inscrit en:</label><br>
+<select id="snum" name="snum"> 
+<option value="Semestre 1">Semestre 1</option>
+<option value="Semestre 2">Semestre 2</option>
+</select>
+	</form>
+</body>
+</html>

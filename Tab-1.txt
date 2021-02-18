@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab-1 : les tableaux</title>
+
+	<style type="text/css">
+		table, tr, td, th{
+			border: 1px solid #000;
+			border-collapse:collapse;
+		}
+		.centre td{text-align: center;
+			border:0;}
+	</style>
+
+</head>
+<body>
+	<h1>Tableau simple</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Nom</th>
+			<th>Prénom</th>
+			<th>Age</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Abbassi</td>
+			<td>Hamid</td>
+			<td>35</td>
+		</tr>
+		<tr>
+			<td>Haddadi</td>
+			<td>Kawtar</td>
+			<td>14</td>
+		</tr>
+		<tr>
+			<td>Fathi</td>
+			<td>Doha</td>
+			<td>25</td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Tableau structuré en HTML</h1>
+<table>
+	<thead >
+		<tr class="centre"><td colspan="4">statistiques</tr>
+		<tr>
+			<th>Pages</th>
+			<th>Nb visites 2018</th>
+			<th>NB visites 2019</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Page1</td>
+			<td>200</td>
+			<td>250</td>
+			<td>450</td>
+		</tr>
+		<tr>
+			<td>Page2</td>
+			<td>1000</td>
+			<td>2000</td>
+			<td>3000</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td>Total</td>
+			<td>1200</td>
+			<td>2250</td>
+			<td>3450</td>
+		</tr>
+	</tfoot>
+</table>
+
+<h1>Autre exemple de tableau structuré en HTML</h1>
+<p>On suppose qu'il y a plusieurs lignes</p>
+<table>
+	<thead>
+		<tr class="centre"><td colspan="6"> Facture de votre commande de livres</td></tr>
+		<tr>
+			<th>Date</th>
+			<th>Titre</th>
+			<th>Auteur</th>
+			<th>Quantité</th>
+			<th>Prix Unitaire</th>
+			<th>prix Total</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>10/10/2013</td>
+			<td>Dictionnaire Arab-English</td>
+			<td>Said Ramdani</td>
+			<td>3</td>
+			<td>32.00 Dhs</td>
+			<td>96.00 Dhs</td>
+		</tr>
+		<tr>
+			<td>10/03/2012</td>
+			<td>HTML: livre de poche</td>
+			<td>Tarik Fadili</td>
+			<td>2</td>
+			<td>38.00 Dhs</td>
+			<td>76.00 Dhs</td>
+		</tr>
+		<tr>
+			<td>10/01/2012</td>
+			<td>Exeercices CSS</td>
+			<td>Soad Sany</td>
+			<td>5</td>
+			<td>29.90 Dhs</td>
+			<td>149.50 DHs</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th>Date</th>
+			<th>Titre</th>
+			<th>Auteur</th>
+			<th>Quantité</th>
+			<th>Prix Unitaire</th>
+			<th>prix Total</th>
+		</tr>
+	</tfoot>
+</table>
+</body>
+</html>

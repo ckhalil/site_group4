@@ -1,0 +1,329 @@
+/* Eléments principaux de la page */
+
+body /* le corps de la page web*/ 
+{
+    background-color:#fff ; /* définir la couleur la couleur blache pour l'arrière-plan de la page  */
+    font: 14px verdana, sans-serif; /* utiliser une police système pour la police de caractères pour toute la page*/ 
+    color: #181818; /*définir la couleur de premier plan des éléments texte */
+}
+
+#page /* c'est le conteneur principal de la page qui contient les blocks: Header, Banniere, section (s) et footer */
+{
+    background-color:#fff ;  /* définir la couleur la couleur blache pour l'arrière-plan du bloc "page" */
+    width: 900px; /* définir la largeur du bloc "page". */
+    margin: auto; /*   définit la taille des marges sur les quatre côtés du bloc "page", la valeur "auto" est pour  peut être utilisé pour centrer les blocs */ 
+}
+
+section h1, footer h1, nav a /* une mise en forme générale des liens et des titre h1 dans les blocs: section, footer et Hearder/nav; */
+{
+    font-weight: normal; /*  permet de définir la graisse utilisée pour le texte: Normal, Bold ... */
+    text-transform: uppercase; /* définir la façon d'utiliser les lettres capitales pour le texte, "uppercase": texte écrit uniquement en majuscules; */
+}
+
+/* Header: l'entête de la page; */
+header
+{
+    background-color: #100;
+    display: flex; /*  définir le type d'affichage utilisé (bloc ou inligne), l'élément "header" devient alors un conteneur flexible et chacun de ses enfants un élément flexible.. */
+    justify-content: center; /* centrer les éléments selon l'axe principal du conteneur flexible "header" */
+    align-items: flex-end;  /* Les éléments flexibles sont regroupés à la fin */
+    border-radius: 10px 10px 0px 0px; /* définir des coins arrondis pour la bordure (haut à gauche / haut à droite / bas à droite / bas à gauche  ) */
+    box-shadow: 0px 0px 4px #1c1a19; /* ajouter des ombres à l'élément header [le décalage horizontal vers la droite (ici 0px), le décalage vertical vers le bas (ici 0px), la force du dégradé (ici 4px) et enfin, la couleur (ici #1c1a19)]*/
+}
+
+#titre_principal /*Header/titre_principal*/
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo /* Header/titre_principal/logo */
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 10px 5px 5px 5px;
+}
+
+#logo img /* Header/titre_principal/logo(img) */
+{
+    width: 225px;
+    height: 60px;
+}
+
+header h1 /* Header/titre_principal/logo(img) */
+{
+    margin-left: 30px;
+    color: #fff;
+    font: 30px verdana, sans-serif;
+    text-align: right;
+}
+
+header h2 /* Header/titre_principal/logo(le titre h2) */
+{
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    color: #fff;
+    font: 25px Freestyle Script, sans-serif;
+}
+
+/* Header/Navigation */
+
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+li.current a { color:#808000; border-bottom: 3px solid #808000; }
+
+nav a
+{
+    font: 20px calibri, sans-serif;
+    color: #fff;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #808000;
+    border-bottom: 3px solid #808000;
+
+}
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 5px;
+    height: 200px;
+    border-radius: 0px 0px 10px 10px;
+    background: url('images/Banniere.png') no-repeat;
+    position: relative;
+    box-shadow: 0px 0px 4px #1c1a19;
+    margin-bottom: 10px;
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    width: 99.6%;
+    height: 33px;
+    border-radius: 5px 5px 10px 10px;
+    padding-top: 20px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 12px;
+    
+}
+
+#banniere_description a:hover
+{
+    background-color: #808000;
+}
+
+.bouton
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: rgba(24,24,24,0.8);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font: 18px calibri, sans-serif;
+    text-align: center;
+    padding: 2px 2px 0 2px;
+    margin: 12px 8px 6px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton img
+{
+    border: 0;
+    margin-bottom: 1px;
+    margin-left: 2px;
+}
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 12px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    background-color: rgba(80,80,80,0.2);
+    padding: 10px;
+    border-radius: 10px 0 0 10px ;
+    
+}
+
+
+.ico_TitreArticle
+{
+    vertical-align: middle;
+    padding-left: 4px;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 18px;
+    line-height: 1.8em;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+article h1
+{
+    font-size: 2.5em;
+    margin-top: 4px;
+    margin-bottom: 2px;
+} 
+
+article div
+{
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+article a
+{
+    color:#808000;
+    text-decoration:none;
+}
+
+article a:hover
+{
+    color: #000;
+}
+
+aside
+{
+    background-color: #808000;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+
+}
+
+.aside_gauche {flex: 0.5;border-radius: 10px 0 0 10px ; text-align: left;font-size:2em; padding-top: 0; }
+
+aside li {
+    margin-bottom: 5px ;
+}
+
+table,
+td {
+    border: 0;
+    width: 100%;
+    text-align: left;
+}
+
+thead{text-align: center;}
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+.code {
+    border-left: 6px solid #484848;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 0 20px 0px;
+    overflow: auto;
+    padding: 0 24px 0 24px;
+    width: 600px;
+    height: 200px;
+}
+
+.TP_Code {overflow:hidden; padding-top:8px; width:750px; border-radius: 0 10px 10px 0;}
+
+iframe{
+    border: 0;
+}
+
+#liste_support {
+  list-style: none;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  font: 20px calibri, sans-serif;
+  margin-top: 4px;
+  text-decoration: none;
+}
+
+#liste_tp{
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font: 20px calibri, sans-serif;
+
+}
+
+#liste_tp li {
+  display: inline;
+  margin-right: 15PX;
+}
+
+aside a
+{
+    color:#000;
+    text-decoration:blink;
+}
+
+aside a:hover
+{
+    color: #fff;
+}
+
+aside img
+{
+    float: right;
+    margin-top: 8px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px 5px 10px 10px;
+    padding: 5px;
+
+}
+
+footer .link
+{
+    color:#808000;
+    text-decoration:underline;
+}
+
+footer a:hover
+{
+    color: #fff;
+}

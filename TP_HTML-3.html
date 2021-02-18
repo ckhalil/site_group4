@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>G4-Website - TP HTML-3</title>
+    </head>
+    
+    <body>
+        <div id="page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <img src="images/logo.png" alt="Logo du groupe" />
+                        <h1>Module HTML/CSS</h1>    
+                    </div>
+                    <h2>Cinq membres pour un même objectif..</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="cours-1.html">Cours</a></li>
+                        <li class="current"><a href="TP_HTML-1.html">TP HTML</a></li>
+                        <li><a href="TP_CSS.html">TP CSS</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="banniere_image">
+                <div id="banniere_description">
+                    Il s’agit d’un travail à rendre en «Programmation Web HTML et CSS» sous l’encadrement de M. OUAHBI Ibrahim dans le cadre ...
+                    <a href="details_description.html" class="bouton">lire plus <img src="images/fleche-droite.png" alt="" /></a>
+                </div>
+            </div>
+            
+            <section>
+                <aside class="aside_gauche">
+                    <h1>Langage HTML</h1>
+                    <ul id="liste_support">
+                        <li><a href="TP_HTML-1.html"><strong>TP1:</strong> Ma première page</a></li><hr>
+                        <li><a href="TP_HTML-2.html"><strong>TP2:</strong> Les listes </a></li><hr>
+                        <li><strong>TP3:</strong> Les liens<img src="images/fleche-droite.png" alt="" /></li><hr>
+                        <li><a href="TP_HTML-4.html"><strong>TP4:</strong> les images</a></li><hr>
+                        <li><a href="TP_HTML-5.html"><strong>TP5:</strong> Les tableaux</a></li><hr>
+                        <li><a href="TP_HTML-6.html"><strong>TP6:</strong> Vidéo et audio</a></li><hr>
+                        <li><a href="TP_HTML-7.html"><strong>TP7:</strong> Les formulaires</a></li><hr>
+                    </ul>
+                </aside>
+                <article class="TP_Code">
+                    <h1><img src="images/ico-TP3.png" alt="A propos du site" class="ico_TitreArticle" />Les liens</h1>
+                    <hr>
+                    <ul id="liste_tp">
+                        <li><a href="#TP3-1" title="aller à la section tp3-1">TP3-1: liens externes</a></li>|
+                        <li><a href="#TP3-2" title="aller à la section tp3-2">TP3-2: liens internes</a></li>|
+                        <li><a href="#TP3-3" title="aller à la section tp3-3">TP3-2: liens même page</a></li>
+                    </ul>
+                    <hr>  
+
+                    <h2 id="TP3-1">liens externes:</h2>
+                    <h3>TP3-1:</h3>
+                    <object class="code" data="TP3-1.txt"/></object>
+                    <hr>
+
+                    <ul id="liste_tp">
+                        <li><a href="#TP3-1" title="aller à la section tp3-1">TP3-1: liens externes</a></li>|
+                        <li><a href="#TP3-2" title="aller à la section tp3-2">TP3-2: liens internes</a></li>|
+                        <li><a href="#TP3-3" title="aller à la section tp3-3">TP3-2: liens même page</a></li>|
+                        <li><a href="#" title="aller au haut de la page">⬆</a></li>
+                    </ul>
+                    <hr> 
+
+                    <h2 id="TP3-2">liens internes:</h2>
+                    <h3>TP3-2-1:</h3>
+                    <object class="code" data="TP3-2-1.txt"/></object>
+                    <h3>TP3-2-2:</h3>
+                    <object class="code" data="TP3-2-2.txt"/></object>
+                    <hr> 
+
+                    <ul id="liste_tp">
+                        <li><a href="#TP3-1" title="aller à la section tp3-1">TP3-1: liens externes</a></li>|
+                        <li><a href="#TP3-2" title="aller à la section tp3-2">TP3-2: liens internes</a></li>|
+                        <li><a href="#TP3-3" title="aller à la section tp3-3">TP3-2: liens même page</a></li>|
+                        <li><a href="#" title="aller au haut de la page">⬆</a></li>
+                    </ul>
+                    <hr> 
+
+                    <h2 id="TP3-3">liens même page:</h2>
+                    <h3>TP3-3:</h3>
+                    <object class="code" data="TP3-3.txt"/></object>
+                    <hr> 
+
+                    
+
+                </article>
+                
+            </section>
+            
+            <footer>
+            	<p>© 2021 LP-TEIP-Groupe 4<br>Sous la l'encadrement de M. OUAHBI Ibrahim, Formateur à la <a href="http://fse.um5.ac.ma/" class="link" target="_blank">faculté des sciences de l'éducation</a></p>                  
+            </footer>
+        </div>
+    </body>
+</html>

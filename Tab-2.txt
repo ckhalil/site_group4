@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab-1 : les tableaux</title>
+
+	<style type="text/css">
+		table, tr, td, th{
+			border: 1px solid #000;
+			border-collapse:collapse;
+		}
+		.centre td{text-align: center;
+			border:0;}
+	</style>
+
+</head>
+<body>
+	<h1>Tableaux complexes</h1>
+	<h2>Fusionner des cellules en colonnes</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Nom</th>
+			<th colspan="2">Téléphone</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Abbassi Hamid</td>
+			<td>0663636363</td>
+			<td>0661636360</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Fusionner des cellules en lignes</h2>
+<table>
+	<thead >
+		<tr>
+			<th>Nom</th>
+			<td>Téléphone</td></tr>
+	</thead>
+	<tbody>
+		<tr><th rowspan="2">Page1</th>
+			<td>0663636363</td>
+		</tr>
+		<tr>
+			<td>0661636360</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Fusion des cellules</h2>
+<table>
+		<tr>
+			<td colspan="2">Colonnes 1 et 2 fusionnées</td>
+			<td>Colonne 3</td>
+			<td colspan="2">Colonnes 4 et 5 fusionnées</td>
+		</tr>
+		<tr>
+			<td>Colonne 1</td>
+			<td>Colonne 2</td>
+			<td>Colonne 3</td>
+			<td>Colonne 4</td>
+			<td>Colonne 5</td>
+		</tr>
+		<tr>
+			<td>Colonne 1</td>
+			<td colspan="3">Colonnes 2,3 et 4 fusionnées</td>
+			<td>Colonne 5</td>
+		</tr>
+
+</table>
+</body>
+</html>
