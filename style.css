@@ -106,7 +106,7 @@ nav a:hover
     margin-top: 5px;
     height: 200px;
     border-radius: 0px 0px 10px 10px;
-    background: url('images/Banniere.png') no-repeat;
+    background: url('banniere.png') no-repeat;
     position: relative;
     box-shadow: 0px 0px 4px #1c1a19;
     margin-bottom: 10px;
